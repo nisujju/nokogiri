@@ -5,7 +5,7 @@ array2 = []
 array3 = []
 array4 = []
 report={}
-report1={}
+report2={}
 
 doc = Nokogiri::XML(File.open("show.xml"))    
 doc_pass = doc.xpath("//CELL//CELL_SPEC")    

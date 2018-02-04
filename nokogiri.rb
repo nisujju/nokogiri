@@ -29,7 +29,7 @@ report['dv'] = array4
 
 count=0
 array1.length.times do |i|
-	# puts "#{array1[i]};#{array3[i]};#{array4[i]}"
+	puts "#{array1[i]};#{array3[i]};#{array4[i]}"
 	File.open("dup1.txt", 'a+')  { |file| file.write("#{array1[i]};#{array3[i]};#{array4[i]};#{array2[count]}; #{array2[count+1]}") }
     File.open("dup1.txt", 'a+') { |file| file.write("\n") }
     count += 3
@@ -39,7 +39,7 @@ Xlsxtream::Workbook.open("foo1.xlsx") do |xlsx|
   xlsx.write_worksheet "Sheet1" do |sheet|
   	count=0
   	array1.length.times do |i|
-    # Date, Time, DateTime and Numeric are properly mapped
+    Date, Time, DateTime and Numeric are properly mapped
       sheet << [array1[i], array3[i], array4[i], array2[count], array2[count+1]]
       # puts "#{array2[count]}; #{array2[count+1]}"
       count += 3

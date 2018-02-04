@@ -26,10 +26,6 @@ report['si'] = array2
 report['hv'] = array3
 report['dv'] = array4
 
-puts array1.length
-puts array2.length
-puts array3.length
-puts array4.length
 
 count=0
 array1.length.times do |i|
